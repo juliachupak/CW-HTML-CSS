@@ -30,7 +30,6 @@ body {
     line-height: 1.25;
     background-color: var(--color-white);
     color: var(--color-black);
-
 }
 
 a {
@@ -174,7 +173,7 @@ input {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin: 185px 0 285px;
+        margin: 185px 0;
         gap: 33px 0;
     }
 
@@ -254,41 +253,40 @@ input {
 }
 
 .categories {
-    padding: 68px 0;
+    padding: 88px 0 68px;
     background-color: var(--color-bg);
 
     .wrap {
         flex-direction: column;
         gap: 37px;
     }
+}
+.categories-nav {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
 
-    .categories-nav {
+    svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    a {
         display: flex;
-        gap: 32px;
-        justify-content: center;
-        font-size: 24px;
-        font-weight: 700;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 8px;
+        box-shadow: 4px 6px 13px var(--shadow-light);
+        padding: 65px 30px 95px;
+        flex: 1;
+        background-color: var(--color-white);
+        transition: color .4s, background-color .4s;
 
-        svg {
-            width: 60px;
-            height: 60px;
-        }
-
-        a {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            border-radius: 8px;
-            box-shadow: 4px 6px 13px var(--shadow-light);
-            padding: 65px 30px 95px;
-            flex: 1;
-            background-color: var(--color-white);
-            transition: color .4s, background-color .4s;
-
-            &:hover {
-                color: var(--color-white);
-                background-color: var(--color-purple);
-            }
+        &:hover {
+            color: var(--color-white);
+            background-color: var(--color-purple);
         }
     }
 }
